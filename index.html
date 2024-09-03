@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Project Planner</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Project Planner</h1>
+        <button class="button" id="trigger">Add Project</button>
+    </nav>
+    
+    <div class="form-container" id="myForm">
+        <form class="form-group">
+            <input type="text" placeholder="Enter Project Title" class="project-title" id="project-title" required>
+            <input type="text" placeholder="Enter Project Description" class="project-description"
+             id="project-description" required>
+            <button class="add-project" id="add-proj" type="button">Add</button>
+            <button class="cancel" type="button">Cancel</button>
+        </form>
+    </div>
+
+    <!-- Active Projects -->
+    <div class="active-projects" id="active-projects">
+        <div class="heading">
+            <h2>Active Projects</h2>
+        </div>
+    </div>
+
+     <!-- Finished Projects -->
+     <div class="finished-projects" id="finished-projects">
+        <div class="heading">
+            <h2>Finished Projects</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
